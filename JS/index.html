@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // task1
+        let name = "Mantas";
+        let surname = "Linka";
+        let birthDate = 1999;
+        let currentYear = 2022;
+        let result = currentYear - birthDate;
+
+        console.log("Aš esu " + name + " " + surname + ". Man yra " + result + " " + "metai");
+        // task2
+        let numberOne = Math.ceil(Math.random() * 4)
+        let numberTwo = Math.ceil(Math.random() * 4)
+        if (numberOne > numberTwo && (numberOne !== numberTwo || numberOne !== 0 && numberTwo !== 0)) {
+            console.log((numberOne / numberTwo).toFixed(0));
+        } else {
+            console.log((numberTwo / numberOne).toFixed(0));
+        }
+
+        // task3
+        let numOne = Math.ceil(Math.random() * 25);
+        let numTwo = Math.ceil(Math.random() * 25);
+        let numThree = Math.ceil(Math.random() * 25);
+        console.log(numOne);
+        console.log(numTwo);
+        console.log(numThree);
+    </script>
+</body>
+
+</html>
