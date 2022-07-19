@@ -18,22 +18,43 @@
         let result = currentYear - birthDate;
 
         console.log("Aš esu " + name + " " + surname + ". Man yra " + result + " " + "metai");
+        console.log("-----------------");
         // task2
-        let numberOne = Math.ceil(Math.random() * 4)
-        let numberTwo = Math.ceil(Math.random() * 4)
-        if (numberOne > numberTwo && (numberOne !== numberTwo || numberOne !== 0 && numberTwo !== 0)) {
-            console.log((numberOne / numberTwo).toFixed(0));
-        } else {
-            console.log((numberTwo / numberOne).toFixed(0));
-        }
 
+        let numberOne = Math.ceil(Math.random() * 4);
+        let numberTwo = Math.ceil(Math.random() * 4);
+
+        if (numberOne > numberTwo && (numberOne !== numberTwo || numberOne !== 0 && numberTwo !== 0)) {
+            console.log((numberOne / numberTwo).toFixed(2));
+        } else {
+            console.log((numberTwo / numberOne).toFixed(2));
+        }
+        console.log("-----------------");
         // task3
+
         let numOne = Math.ceil(Math.random() * 25);
         let numTwo = Math.ceil(Math.random() * 25);
         let numThree = Math.ceil(Math.random() * 25);
         console.log(numOne);
         console.log(numTwo);
         console.log(numThree);
+        console.log("-----------------");
+        let middle = numOne + numTwo + numThree - Math.min(numOne, numTwo, numThree) - Math.max(numOne, numTwo, numThree);
+        console.log(middle);
+        // task4
+        console.log("----------------");
+        let a = Math.ceil(Math.random() * 10);
+        console.log(a);
+        let b = Math.ceil(Math.random() * 10);
+        console.log(b);
+        let c = Math.ceil(Math.random() * 10);
+        console.log(c);
+        let triangle = ((a + b + c) / 2);
+        if(triangle) {
+           console.log("galima sudaryti trikampį");
+       } else {
+           console.log("negalima sudaryti trikampį");
+       }       
     </script>
 </body>
 
